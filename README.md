@@ -104,10 +104,6 @@ npm run dev:full
 - Check that the correct API key is in the `.env` file
 - Verify that your Gemini API key is valid
 
-## 📄 License
 
-This project is licensed under the MIT license.
-
----
 
 **ChefMate AI** - AI by your side in the kitchen! 🍳🤖
