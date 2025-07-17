@@ -1,54 +1,57 @@
-# ChefMate AI - Yapay Zeka Destekli Yemek Tarifi Asistanı
+# ChefMate AI - AI-Powered Recipe Assistant
 
-ChefMate AI, Gemini AI teknolojisi kullanarak yemek tarifleri, pişirme teknikleri ve mutfak ipuçları sunan modern bir web uygulamasıdır.
+<img width="847" height="654" alt="123" src="https://github.com/user-attachments/assets/898e054b-b49d-45ba-94f3-4505c460dfc5" />
 
-## 🚀 Özellikler
 
-- 🤖 **AI Destekli Sohbet**: Gemini AI ile gerçek zamanlı yemek tarifi asistanı
-- 🍳 **Detaylı Tarifler**: Malzeme listesi ve adım adım talimatlar
-- 🌍 **Dünya Mutfağı**: Farklı kültürlerden tarifler
-- 💡 **Mutfak İpuçları**: Pişirme teknikleri ve püf noktaları
-- 📱 **Modern UI**: Responsive ve kullanıcı dostu arayüz
+ChefMate AI is a modern web application that provides recipes, cooking techniques, and kitchen tips using Gemini AI technology.
 
-## 🛠️ Kurulum
+## 🚀 Features
 
-### Gereksinimler
-- Node.js (v16 veya üzeri)
-- npm veya yarn
+- 🤖 **AI-Powered Chat**: Real-time recipe assistant with Gemini AI
+- 🍳 **Detailed Recipes**: Ingredient lists and step-by-step instructions
+- 🌍 **World Cuisine**: Recipes from different cultures
+- 💡 **Kitchen Tips**: Cooking techniques and tricks
+- 📱 **Modern UI**: Responsive and user-friendly interface
 
-### Adımlar
+## 🛠️ Installation
 
-1. **Projeyi klonlayın**
+### Requirements
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Steps
+
+1. **Clone the project**
 ```bash
 git clone <repository-url>
 cd ChefMate-AI
 ```
 
-2. **Bağımlılıkları yükleyin**
+2. **Install dependencies**
 ```bash
 npm install
 ```
 
-3. **Environment variables ayarlayın**
-`.env` dosyası oluşturun:
+3. **Set up environment variables**
+Create a `.env` file:
 ```env
 GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3001
 ```
 
-4. **Uygulamayı başlatın**
+4. **Start the application**
 
-**Sadece Frontend (Geliştirme):**
+**Frontend Only (Development):**
 ```bash
 npm run dev
 ```
 
-**Sadece Backend Server:**
+**Backend Server Only:**
 ```bash
 npm run server
 ```
 
-**Frontend + Backend (Önerilen):**
+**Frontend + Backend (Recommended):**
 ```bash
 npm run dev:full
 ```
@@ -57,54 +60,54 @@ npm run dev:full
 
 ### Chat Endpoint
 - **URL**: `POST /api/chat`
-- **Body**: `{ "message": "kullanıcı mesajı" }`
-- **Response**: `{ "response": "AI yanıtı", "timestamp": "..." }`
+- **Body**: `{ "message": "user message" }`
+- **Response**: `{ "response": "AI response", "timestamp": "..." }`
 
 ### Health Check
 - **URL**: `GET /api/health`
 - **Response**: `{ "status": "OK", "message": "..." }`
 
-## 🎯 Kullanım
+## 🎯 Usage
 
-1. Uygulamayı başlattıktan sonra `http://localhost:5173` adresine gidin
-2. Chat bölümünde yemek tarifleri, pişirme teknikleri veya mutfak ipuçları hakkında sorular sorun
-3. AI asistanı size detaylı yanıtlar verecektir
+1. After starting the application, go to `http://localhost:5173`
+2. Ask questions about recipes, cooking techniques, or kitchen tips in the chat section
+3. The AI assistant will provide detailed responses
 
-## 🔧 Teknolojiler
+## 🔧 Technologies
 
 - **Frontend**: Vue.js 3, Vite
 - **Backend**: Node.js, Express.js
 - **AI**: Google Gemini API
 - **Styling**: CSS3, Custom animations
 
-## 📝 Örnek Sorular
+## 📝 Example Questions
 
-- "Carbonara tarifi nasıl yapılır?"
-- "Pilav pişirme teknikleri nelerdir?"
-- "Evde pizza hamuru nasıl yapılır?"
-- "Balık pişirme ipuçları verir misin?"
-- "Tatlı tarifleri önerir misin?"
+- "How do you make Carbonara?"
+- "What are rice cooking techniques?"
+- "How do you make pizza dough at home?"
+- "Can you give me fish cooking tips?"
+- "Can you suggest dessert recipes?"
 
-## 🔒 Güvenlik
+## 🔒 Security
 
-- API key'ler environment variables ile güvenli şekilde saklanır
-- CORS ayarları yapılandırılmıştır
-- Input validation mevcuttur
+- API keys are securely stored using environment variables
+- CORS settings are configured
+- Input validation is available
 
-## 🐛 Sorun Giderme
+## 🐛 Troubleshooting
 
-### Backend bağlantı hatası
-- Backend server'ın çalıştığından emin olun (`npm run server`)
-- Port 3001'in kullanılabilir olduğunu kontrol edin
+### Backend connection error
+- Make sure the backend server is running (`npm run server`)
+- Check that port 3001 is available
 
-### API key hatası
-- `.env` dosyasında doğru API key'in olduğunu kontrol edin
-- Gemini API key'inizin geçerli olduğunu doğrulayın
+### API key error
+- Check that the correct API key is in the `.env` file
+- Verify that your Gemini API key is valid
 
-## 📄 Lisans
+## 📄 License
 
-Bu proje MIT lisansı altında lisanslanmıştır.
+This project is licensed under the MIT license.
 
 ---
 
-**ChefMate AI** - Mutfakta yapay zeka ile yanınızda! 🍳🤖
+**ChefMate AI** - AI by your side in the kitchen! 🍳🤖
