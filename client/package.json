@@ -1,6 +1,7 @@
 {
-  "name": "yemeksp",
-  "version": "0.0.0",
+  "name": "chefmate-ai-client",
+  "version": "1.0.0",
+  "description": "ChefMate AI Frontend",
   "private": true,
   "type": "module",
   "scripts": {
